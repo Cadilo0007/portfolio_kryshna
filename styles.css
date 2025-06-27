@@ -51,7 +51,7 @@ nav{
 }
 
 a {
-    font-size: 20px;
+    font-size: 11px;
     color: #FFBF00;
     text-decoration: none;
     text-decoration-color: white;
@@ -123,9 +123,9 @@ a:hover {
 .menu-links.open {
     max-height: 52rem;
     margin-top: 30px;
-    margin-right: -253%;
+    margin-right: -223%;
     padding-top: 137px;
-    padding-bottom: 400px;
+    padding-bottom: 800px;
     padding-left: 137px;
     padding-right: 137px;
     background: transparent;
@@ -292,7 +292,7 @@ section {
     
 }
 
-.about-pic {
+.about-details-container .icon {
     border-radius: 2rem;
 }
 
@@ -351,6 +351,9 @@ section {
     justify-self: center;
     flex-direction: column;
 }
+.experience-details-container p {
+    color: #FFBF00;
+}
 .article-container {
     display: flex;
     text-align: initial;
@@ -390,9 +393,10 @@ article .icon {
 }
 
 .project-img {
-    border-radius: 32px;
-    width: 90%;
-    height: 90%;
+  width: 100%;
+  aspect-ratio: 1 / 1;     /* forces a square aspect ratio */
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .project-title {
@@ -439,7 +443,7 @@ article .icon {
 }
 
 .contact-info-container p {
-    font-size: larger;
+    font-size: smaller;
 }
 /** footer*/
 
